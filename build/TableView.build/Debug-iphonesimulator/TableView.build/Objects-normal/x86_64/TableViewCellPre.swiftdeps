@@ -1,0 +1,349 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TableViewCellPre"
+provides-nominal:
+- "C9TableView16TableViewCellPre"
+provides-member:
+- ["C9TableView16TableViewCellPre", ""]
+provides-dynamic-lookup:
+- "setSelected"
+- "inputLabel"
+- "titleLabel"
+depends-top-level:
+- !private "NSLayoutConstraint"
+- "TableViewCellPre"
+- !private "Array"
+- "UITableViewCellStyle"
+- "String"
+- "Bool"
+- "UILabel"
+- !private "BooleanLiteralType"
+- "UITableViewCell"
+- "NSCoder"
+depends-member:
+- !private ["PSs9AnyObject", "NSLayoutConstraint"]
+- ["PSs9AnyObject", "UILabel"]
+- !private ["PSs9AnyObject", "addConstraints"]
+- !private ["PSs9AnyObject", "addSubview"]
+- !private ["PSs9AnyObject", "contentView"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "inputLabel"]
+- ["PSs9AnyObject", "setSelected"]
+- ["PSs9AnyObject", "titleLabel"]
+- !private ["PSs9AnyObject", "translatesAutoresizingMaskIntoConstraints"]
+- ["PSs9AnyObject", ""]
+- !private ["Sa", "Element"]
+- !private ["PSs23ArrayLiteralConvertible", "Element"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["PSs11CVarArgType", "NSLayoutConstraint"]
+- ["PSs11CVarArgType", "UILabel"]
+- !private ["PSs11CVarArgType", "addConstraints"]
+- !private ["PSs11CVarArgType", "addSubview"]
+- !private ["PSs11CVarArgType", "contentView"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "inputLabel"]
+- ["PSs11CVarArgType", "setSelected"]
+- ["PSs11CVarArgType", "titleLabel"]
+- !private ["PSs11CVarArgType", "translatesAutoresizingMaskIntoConstraints"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs14CollectionType", "Element"]
+- !private ["PSs28CustomDebugStringConvertible", "Element"]
+- !private ["PSs23CustomStringConvertible", "Element"]
+- !private ["PSs23CustomStringConvertible", "NSLayoutConstraint"]
+- ["PSs23CustomStringConvertible", "UILabel"]
+- !private ["PSs23CustomStringConvertible", "addConstraints"]
+- !private ["PSs23CustomStringConvertible", "addSubview"]
+- !private ["PSs23CustomStringConvertible", "contentView"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "inputLabel"]
+- ["PSs23CustomStringConvertible", "setSelected"]
+- ["PSs23CustomStringConvertible", "titleLabel"]
+- !private ["PSs23CustomStringConvertible", "translatesAutoresizingMaskIntoConstraints"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "Bottom"]
+- !private ["PSs9Equatable", "CenterX"]
+- !private ["PSs9Equatable", "Equal"]
+- !private ["PSs9Equatable", "NSLayoutConstraint"]
+- !private ["PSs9Equatable", "Top"]
+- ["PSs9Equatable", "UILabel"]
+- !private ["PSs9Equatable", "addConstraints"]
+- !private ["PSs9Equatable", "addSubview"]
+- !private ["PSs9Equatable", "contentView"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "inputLabel"]
+- ["PSs9Equatable", "setSelected"]
+- ["PSs9Equatable", "titleLabel"]
+- !private ["PSs9Equatable", "translatesAutoresizingMaskIntoConstraints"]
+- ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "Bottom"]
+- !private ["PSs8Hashable", "CenterX"]
+- !private ["PSs8Hashable", "Equal"]
+- !private ["PSs8Hashable", "NSLayoutConstraint"]
+- !private ["PSs8Hashable", "Top"]
+- ["PSs8Hashable", "UILabel"]
+- !private ["PSs8Hashable", "addConstraints"]
+- !private ["PSs8Hashable", "addSubview"]
+- !private ["PSs8Hashable", "contentView"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "inputLabel"]
+- ["PSs8Hashable", "setSelected"]
+- ["PSs8Hashable", "titleLabel"]
+- !private ["PSs8Hashable", "translatesAutoresizingMaskIntoConstraints"]
+- ["PSs8Hashable", ""]
+- !private ["PSs9Indexable", "Element"]
+- !private ["PSs21MutableCollectionType", "Element"]
+- !private ["PSs16MutableIndexable", "Element"]
+- !private ["PSs16MutableSliceable", "Element"]
+- !private ["PSo8NSCoding", "NSLayoutConstraint"]
+- ["PSo8NSCoding", "UILabel"]
+- !private ["PSo8NSCoding", "addConstraints"]
+- !private ["PSo8NSCoding", "addSubview"]
+- !private ["PSo8NSCoding", "contentView"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "inputLabel"]
+- ["PSo8NSCoding", "setSelected"]
+- ["PSo8NSCoding", "titleLabel"]
+- !private ["PSo8NSCoding", "translatesAutoresizingMaskIntoConstraints"]
+- ["PSo8NSCoding", ""]
+- !private ["OSC17NSLayoutAttribute", "Bottom"]
+- !private ["OSC17NSLayoutAttribute", "CenterX"]
+- !private ["OSC17NSLayoutAttribute", "Top"]
+- !private ["CSo18NSLayoutConstraint", "init"]
+- !private ["OSC16NSLayoutRelation", "Equal"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "NSCoder"]
+- !private ["CSo8NSObject", "NSLayoutConstraint"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "UITableViewCellStyle"]
+- !private ["CSo8NSObject", "addConstraints"]
+- !private ["CSo8NSObject", "addSubview"]
+- !private ["CSo8NSObject", "contentView"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "inputLabel"]
+- ["CSo8NSObject", "setSelected"]
+- ["CSo8NSObject", "titleLabel"]
+- !private ["CSo8NSObject", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo16NSObjectProtocol", "NSLayoutConstraint"]
+- ["PSo16NSObjectProtocol", "UILabel"]
+- !private ["PSo16NSObjectProtocol", "addConstraints"]
+- !private ["PSo16NSObjectProtocol", "addSubview"]
+- !private ["PSo16NSObjectProtocol", "contentView"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "inputLabel"]
+- ["PSo16NSObjectProtocol", "setSelected"]
+- ["PSo16NSObjectProtocol", "titleLabel"]
+- !private ["PSo16NSObjectProtocol", "translatesAutoresizingMaskIntoConstraints"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSs30RangeReplaceableCollectionType", "Element"]
+- !private ["PSs16RawRepresentable", "Bottom"]
+- !private ["PSs16RawRepresentable", "CenterX"]
+- !private ["PSs16RawRepresentable", "Equal"]
+- !private ["PSs16RawRepresentable", "Top"]
+- !private ["PSs12SequenceType", "Element"]
+- ["C9TableView16TableViewCellPre", "Bool"]
+- ["C9TableView16TableViewCellPre", "NSCoder"]
+- !private ["C9TableView16TableViewCellPre", "NSLayoutConstraint"]
+- ["C9TableView16TableViewCellPre", "String"]
+- ["C9TableView16TableViewCellPre", "UILabel"]
+- ["C9TableView16TableViewCellPre", "UITableViewCellStyle"]
+- !private ["C9TableView16TableViewCellPre", "contentView"]
+- ["C9TableView16TableViewCellPre", "deinit"]
+- ["C9TableView16TableViewCellPre", "init"]
+- ["C9TableView16TableViewCellPre", "inputLabel"]
+- ["C9TableView16TableViewCellPre", "setSelected"]
+- ["C9TableView16TableViewCellPre", "titleLabel"]
+- !private ["PSo29UIAccessibilityIdentification", "NSLayoutConstraint"]
+- ["PSo29UIAccessibilityIdentification", "UILabel"]
+- !private ["PSo29UIAccessibilityIdentification", "addConstraints"]
+- !private ["PSo29UIAccessibilityIdentification", "addSubview"]
+- !private ["PSo29UIAccessibilityIdentification", "contentView"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "inputLabel"]
+- ["PSo29UIAccessibilityIdentification", "setSelected"]
+- ["PSo29UIAccessibilityIdentification", "titleLabel"]
+- !private ["PSo29UIAccessibilityIdentification", "translatesAutoresizingMaskIntoConstraints"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "NSLayoutConstraint"]
+- ["PSo12UIAppearance", "UILabel"]
+- !private ["PSo12UIAppearance", "addConstraints"]
+- !private ["PSo12UIAppearance", "addSubview"]
+- !private ["PSo12UIAppearance", "contentView"]
+- ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "inputLabel"]
+- ["PSo12UIAppearance", "setSelected"]
+- ["PSo12UIAppearance", "titleLabel"]
+- !private ["PSo12UIAppearance", "translatesAutoresizingMaskIntoConstraints"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "NSLayoutConstraint"]
+- ["PSo21UIAppearanceContainer", "UILabel"]
+- !private ["PSo21UIAppearanceContainer", "addConstraints"]
+- !private ["PSo21UIAppearanceContainer", "addSubview"]
+- !private ["PSo21UIAppearanceContainer", "contentView"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "inputLabel"]
+- ["PSo21UIAppearanceContainer", "setSelected"]
+- ["PSo21UIAppearanceContainer", "titleLabel"]
+- !private ["PSo21UIAppearanceContainer", "translatesAutoresizingMaskIntoConstraints"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo17UICoordinateSpace", "NSLayoutConstraint"]
+- ["PSo17UICoordinateSpace", "UILabel"]
+- !private ["PSo17UICoordinateSpace", "addConstraints"]
+- !private ["PSo17UICoordinateSpace", "addSubview"]
+- !private ["PSo17UICoordinateSpace", "contentView"]
+- ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "inputLabel"]
+- ["PSo17UICoordinateSpace", "setSelected"]
+- ["PSo17UICoordinateSpace", "titleLabel"]
+- !private ["PSo17UICoordinateSpace", "translatesAutoresizingMaskIntoConstraints"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "NSLayoutConstraint"]
+- ["PSo13UIDynamicItem", "UILabel"]
+- !private ["PSo13UIDynamicItem", "addConstraints"]
+- !private ["PSo13UIDynamicItem", "addSubview"]
+- !private ["PSo13UIDynamicItem", "contentView"]
+- ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "inputLabel"]
+- ["PSo13UIDynamicItem", "setSelected"]
+- ["PSo13UIDynamicItem", "titleLabel"]
+- !private ["PSo13UIDynamicItem", "translatesAutoresizingMaskIntoConstraints"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "NSLayoutConstraint"]
+- ["PSo18UIFocusEnvironment", "UILabel"]
+- !private ["PSo18UIFocusEnvironment", "addConstraints"]
+- !private ["PSo18UIFocusEnvironment", "addSubview"]
+- !private ["PSo18UIFocusEnvironment", "contentView"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "inputLabel"]
+- ["PSo18UIFocusEnvironment", "setSelected"]
+- ["PSo18UIFocusEnvironment", "titleLabel"]
+- !private ["PSo18UIFocusEnvironment", "translatesAutoresizingMaskIntoConstraints"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo27UIGestureRecognizerDelegate", "NSLayoutConstraint"]
+- ["PSo27UIGestureRecognizerDelegate", "UILabel"]
+- !private ["PSo27UIGestureRecognizerDelegate", "contentView"]
+- ["PSo27UIGestureRecognizerDelegate", "init"]
+- ["PSo27UIGestureRecognizerDelegate", "inputLabel"]
+- ["PSo27UIGestureRecognizerDelegate", "setSelected"]
+- ["PSo27UIGestureRecognizerDelegate", "titleLabel"]
+- ["PSo27UIGestureRecognizerDelegate", ""]
+- ["CSo7UILabel", "init"]
+- !private ["CSo7UILabel", "translatesAutoresizingMaskIntoConstraints"]
+- ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "NSCoder"]
+- !private ["CSo11UIResponder", "NSLayoutConstraint"]
+- ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "UITableViewCellStyle"]
+- !private ["CSo11UIResponder", "addConstraints"]
+- !private ["CSo11UIResponder", "addSubview"]
+- !private ["CSo11UIResponder", "contentView"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "inputLabel"]
+- ["CSo11UIResponder", "setSelected"]
+- ["CSo11UIResponder", "titleLabel"]
+- !private ["CSo11UIResponder", "translatesAutoresizingMaskIntoConstraints"]
+- ["CSo15UITableViewCell", "Bool"]
+- ["CSo15UITableViewCell", "NSCoder"]
+- !private ["CSo15UITableViewCell", "NSLayoutConstraint"]
+- ["CSo15UITableViewCell", "String"]
+- ["CSo15UITableViewCell", "UILabel"]
+- ["CSo15UITableViewCell", "UITableViewCellStyle"]
+- !private ["CSo15UITableViewCell", "contentView"]
+- ["CSo15UITableViewCell", "init"]
+- ["CSo15UITableViewCell", "inputLabel"]
+- ["CSo15UITableViewCell", "setSelected"]
+- ["CSo15UITableViewCell", "titleLabel"]
+- ["CSo15UITableViewCell", ""]
+- !private ["PSo18UITraitEnvironment", "NSLayoutConstraint"]
+- ["PSo18UITraitEnvironment", "UILabel"]
+- !private ["PSo18UITraitEnvironment", "addConstraints"]
+- !private ["PSo18UITraitEnvironment", "addSubview"]
+- !private ["PSo18UITraitEnvironment", "contentView"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "inputLabel"]
+- ["PSo18UITraitEnvironment", "setSelected"]
+- ["PSo18UITraitEnvironment", "titleLabel"]
+- !private ["PSo18UITraitEnvironment", "translatesAutoresizingMaskIntoConstraints"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "Bool"]
+- ["CSo6UIView", "NSCoder"]
+- !private ["CSo6UIView", "NSLayoutConstraint"]
+- ["CSo6UIView", "String"]
+- ["CSo6UIView", "UILabel"]
+- ["CSo6UIView", "UITableViewCellStyle"]
+- !private ["CSo6UIView", "addConstraints"]
+- !private ["CSo6UIView", "addSubview"]
+- !private ["CSo6UIView", "contentView"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "inputLabel"]
+- ["CSo6UIView", "setSelected"]
+- ["CSo6UIView", "titleLabel"]
+- !private ["CSo6UIView", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSs10_ArrayType", "Element"]
+- !private ["PSs24_DestructorSafeContainer", "Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "Element"]
+- !private ["PSs12_Reflectable", "Element"]
+- !private ["PSs12_Reflectable", "NSLayoutConstraint"]
+- ["PSs12_Reflectable", "UILabel"]
+- !private ["PSs12_Reflectable", "addConstraints"]
+- !private ["PSs12_Reflectable", "addSubview"]
+- !private ["PSs12_Reflectable", "contentView"]
+- ["PSs12_Reflectable", "init"]
+- ["PSs12_Reflectable", "inputLabel"]
+- ["PSs12_Reflectable", "setSelected"]
+- ["PSs12_Reflectable", "titleLabel"]
+- !private ["PSs12_Reflectable", "translatesAutoresizingMaskIntoConstraints"]
+- ["PSs12_Reflectable", ""]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "Sa"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "V12CoreGraphics7CGFloat"
+- "PSs11CVarArgType"
+- !private "PSs14CollectionType"
+- !private "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- !private "PSs9Indexable"
+- !private "PSs21MutableCollectionType"
+- !private "PSs16MutableIndexable"
+- !private "PSs16MutableSliceable"
+- "PSo8NSCoding"
+- !private "OSC17NSLayoutAttribute"
+- !private "CSo18NSLayoutConstraint"
+- !private "OSC16NSLayoutRelation"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSs30RangeReplaceableCollectionType"
+- !private "PSs16RawRepresentable"
+- !private "PSs12SequenceType"
+- "C9TableView16TableViewCellPre"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo27UIGestureRecognizerDelegate"
+- "CSo7UILabel"
+- "CSo11UIResponder"
+- "CSo15UITableViewCell"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- !private "PSs10_ArrayType"
+- !private "PSs24_DestructorSafeContainer"
+- !private "PSs21_ObjectiveCBridgeable"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "782c33306ec01187f7e88bad5bf9c79f"

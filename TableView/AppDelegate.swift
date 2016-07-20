@@ -15,7 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        window = UIWindow.init(frame: UIScreen.mainScreen().bounds)
+        window?.rootViewController = TableViewController1()
+        window?.makeKeyAndVisible()
+        let table = TableViewController1();
+        //创建导航控制器
+        let nvc = UINavigationController(rootViewController:table);
+        //设置根视图
+        self.window!.rootViewController = nvc;
         return true
     }
 
