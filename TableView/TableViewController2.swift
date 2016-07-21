@@ -12,10 +12,8 @@ let TITLE = "title"
 let DESC = "description"
 class TableViewController2: UITableViewController {
 
-    var text=["Title","Description"]
     private var selectIndexPath: NSIndexPath?
-    private var titleName:String = "无";
-    private var Desc:String = "无";
+    var sourceData = [ItemClass]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +21,7 @@ class TableViewController2: UITableViewController {
         self.tableView.registerClass(TableViewCellPre.self, forCellReuseIdentifier: "TableViewCellPre")
         self.tableView.dataSource = self
         self.tableView.delegate = self
-
+        fetch()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -31,12 +29,9 @@ class TableViewController2: UITableViewController {
         self.title = "管理项目";
         let nextItem = UIBarButtonItem(title:"添加",style:.Plain,target:self,action:"AddItem");
         self.navigationItem.rightBarButtonItem = nextItem;
-    }
-
-    func tansfer (item: ItemClass)
-    {
-        titleName = item.getTitle()
-        Desc = item.getDesc()
+        
+        
+        
     }
     
     
@@ -46,6 +41,15 @@ class TableViewController2: UITableViewController {
         self.navigationController!.popViewControllerAnimated(true);
     }
     
+    func fetch()
+    {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        
+        if let saved = defaults.objectForKey("item") as? NSData {
+            sourceData = NSKeyedUnarchiver.unarchiveObjectWithData(saved) as! [ItemClass]
+        }
+    }
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -53,7 +57,7 @@ class TableViewController2: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return sourceData.count
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -62,14 +66,8 @@ class TableViewController2: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("TableViewCellPre", forIndexPath: indexPath) as! TableViewCellPre
-        cell.titleLabel.text = text[indexPath.row]
-        switch indexPath.row
-        {
-        case 0: cell.titleLabel.font = UIFont.systemFontOfSize(30)
-        cell.inputLabel.text = titleName
-        case 1: cell.inputLabel.text = Desc
-        default:break
-        }
+        cell.titleLabel.text = sourceData[indexPath.row].getTitle()
+        cell.inputLabel.text = sourceData[indexPath.row].getDesc()
         return cell
     }
     

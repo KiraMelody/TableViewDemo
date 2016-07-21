@@ -88,6 +88,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import ObjectiveC;
+@import Foundation;
 @import CoreGraphics;
 #endif
 
@@ -109,10 +110,13 @@ SWIFT_CLASS("_TtC9TableView11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSCoder;
 
 SWIFT_CLASS("_TtC9TableView9ItemClass")
-@interface ItemClass : NSObject
+@interface ItemClass : NSObject <NSCoding>
 - (nonnull instancetype)initWithTitle:(NSString * __nonnull)Title Desc:(NSString * __nonnull)Desc OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)encodeWithCoder:(NSCoder * __nonnull)aCoder;
 - (NSString * __nonnull)getTitle;
 - (NSString * __nonnull)getDesc;
 @end
@@ -120,7 +124,6 @@ SWIFT_CLASS("_TtC9TableView9ItemClass")
 @class UIStoryboardSegue;
 @class UIViewController;
 @class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC9TableView24NavigationViewController")
 @interface NavigationViewController : UINavigationController
@@ -169,6 +172,7 @@ SWIFT_CLASS("_TtC9TableView20TableViewController1")
 @property (nonatomic, copy) NSString * __nonnull Desc;
 - (void)viewDidLoad;
 - (void)GoBack;
+- (void)fetch:(ItemClass * __nonnull)item;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
@@ -186,10 +190,10 @@ SWIFT_CLASS("_TtC9TableView20TableViewController1")
 
 SWIFT_CLASS("_TtC9TableView20TableViewController2")
 @interface TableViewController2 : UITableViewController
-@property (nonatomic, copy) NSArray<NSString *> * __nonnull text;
+@property (nonatomic, copy) NSArray<ItemClass *> * __nonnull sourceData;
 - (void)viewDidLoad;
-- (void)tansfer:(ItemClass * __nonnull)item;
 - (void)AddItem;
+- (void)fetch;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;

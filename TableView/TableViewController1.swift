@@ -41,8 +41,28 @@ class TableViewController1: UITableViewController,TableViewCellDelegate {
         tableView.endEditing(true)
         let Anothervc = TableViewController2();
         let item = ItemClass(Title: TitleName,Desc: Desc)
-        Anothervc.tansfer(item)
+        fetch(item)
         self.navigationController!.pushViewController(Anothervc,animated:true);
+    }
+    
+    func fetch(item: ItemClass)
+    {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        
+        if let saved = defaults.objectForKey("item") as? NSData {
+            var data = NSKeyedUnarchiver.unarchiveObjectWithData(saved) as? [ItemClass] ?? [ItemClass]()
+            data.append(item)
+            let savedData = NSKeyedArchiver.archivedDataWithRootObject(data)
+            defaults.setObject(savedData, forKey: "item")
+        }
+        else
+        {
+            var data = [ItemClass]()
+            data.append(item)
+            let savedData = NSKeyedArchiver.archivedDataWithRootObject(data)
+            defaults.setObject(savedData, forKey: "item")
+            defaults.synchronize()
+        }
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
